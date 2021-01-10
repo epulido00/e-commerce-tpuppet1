@@ -40,5 +40,6 @@
       <a href="login.php">Login</a> or
       <a href="signup.php">SignUp</a>
     <?php endif; ?>
+    <?php require 'cerrar_conexion.php' ?>
   </body>
 </html>

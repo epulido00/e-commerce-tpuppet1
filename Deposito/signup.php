@@ -20,8 +20,8 @@
             $message = 'ya te la pelaste';
         }
         */
-
-        $var = "INSERT INTO usuario (name, user, email, pass) VALUES ('".$_POST['name']."','".$_POST['user']."', '".$_POST['email']."', '".$_POST['pass']."')";
+        $AD=0;
+        $var = "INSERT INTO usuario (name, user, email, pass, admin) VALUES ('".$_POST['name']."','".$_POST['user']."', '".$_POST['email']."', '".$_POST['pass']."','$AD')";
         
         try {
             if (mysqli_query($connection, $var)) {
